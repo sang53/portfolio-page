@@ -19,6 +19,10 @@
     justify-self: center;
   }
 
+  li {
+    padding-left: 1ch;
+  }
+
   > div > a {
     margin-inline: 1rem;
   }

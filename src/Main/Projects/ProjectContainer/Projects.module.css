@@ -1,5 +1,5 @@
 .projectContainer[id="projects-container"] {
   scroll-snap-align: none;
-  gap: 50vh;
+  gap: 25vh;
   padding-bottom: 40vh;
 }
