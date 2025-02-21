@@ -11,10 +11,7 @@
     height: 2rem;
     width: 2rem;
     will-change: contents;
-
-    &:hover {
-      cursor: pointer;
-    }
+    cursor: pointer;
   }
 }
 
@@ -52,7 +49,7 @@
       fill: var(--bgc-dark);
       stroke: var(--bgc-light);
       transform: scale(2);
-      transition: transform 1s 500ms linear, stroke 750ms, fill 750ms;
+      transition: transform 750ms 250ms linear, stroke 500ms, fill 500ms;
     }
   }
 
