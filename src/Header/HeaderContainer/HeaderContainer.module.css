@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  flex-wrap: wrap;
   padding: 1rem 1rem;
   justify-content: space-between;
   position: fixed;
@@ -19,9 +20,4 @@
   composes: header;
   background-color: var(--backdrop-light);
   color: var(--font-light);
-}
-
-.buttons {
-  display: flex;
-  gap: 1rem;
 }

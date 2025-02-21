@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import classes from "./Navbar.module.css";
 
+const { active, inactive } = classes;
+
 export default function NavBar() {
-  const [active, setActive] = useState("landing");
+  const [activeId, setActiveId] = useState("landing");
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
@@ -10,7 +12,7 @@ export default function NavBar() {
       (entries) => {
         const visibleSection = entries.find((entry) => entry.isIntersecting);
         if (visibleSection) {
-          setActive(visibleSection.target.id);
+          setActiveId(visibleSection.target.id);
         }
       },
       { threshold: 0.5 }
@@ -27,35 +29,25 @@ export default function NavBar() {
 
   return (
     <nav className={classes.navBar}>
-      <a
-        href="#landing"
-        className={active === "landing" ? classes.active : classes.inactive}
-      >
+      <a href="#landing" className={activeId === "landing" ? active : inactive}>
         Home
       </a>
-      <a
-        href="#intro"
-        className={active === "intro" ? classes.active : classes.inactive}
-      >
+      <a href="#intro" className={activeId === "intro" ? active : inactive}>
         About
       </a>
       <a
         href="#technologies"
-        className={
-          active === "technologies" ? classes.active : classes.inactive
-        }
+        className={activeId === "technologies" ? active : inactive}
       >
         Skills
       </a>
       <a
         href="#projects-container"
-        className={
-          active === "projects-container" ? classes.active : classes.inactive
-        }
+        className={activeId === "projects-container" ? active : inactive}
       >
         Projects
       </a>
-      <a className={classes.inactive}>Resume</a>
+      <a className={inactive}>Resume</a>
     </nav>
   );
 }
