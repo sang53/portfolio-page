@@ -1,2 +1,5 @@
 .landing {
+  > p {
+    font-size: var(--font-size-medplus);
+  }
 }

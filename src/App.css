@@ -43,6 +43,7 @@
   font-family: "JetBrains", "Cormorant", system-ui;
 
   --font-size-large: 40px;
+  --font-size-medplus: 36px;
   --font-size-med: 28px;
   --font-size-small: 20px;
 
@@ -50,7 +51,7 @@
   --font-weight-normal: 450;
 
   --backdrop-dark: rgba(0, 0, 0, 0.5);
-  --backdrop-light: rgba(255, 255, 255, 0.6);
+  --backdrop-light: rgba(255, 255, 255, 0.7);
   --bgc-dark: black;
   --bgc-light: white;
   --font-light: black;

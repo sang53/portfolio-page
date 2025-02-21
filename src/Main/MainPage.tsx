@@ -10,9 +10,9 @@ export default function MainPage() {
   const { theme } = use(ThemeContext);
   return (
     <div id="main" className={classes[theme]}>
-      <Landing />
-      <Intro />
-      <Technology />
+      <Landing nextId="intro" />
+      <Intro nextId="technologies" />
+      <Technology nextId="projects-container" />
       <Projects />
     </div>
   );
