@@ -1,10 +1,16 @@
 .navBar {
   display: flex;
-  gap: 2rem;
-}
+  gap: 3rem;
 
-.navLink {
+  a {
+    text-decoration: none;
+  }
 }
 
 .active {
+  color: blue;
+}
+
+.inactive {
+  color: red;
 }

@@ -8,11 +8,13 @@ export default function HeaderContainer() {
   const { theme, toggleTheme } = use(ThemeContext);
   const { three, toggleThree } = use(BackgroundContext);
   return (
-    <div className={classes.header}>
+    <div className={classes[theme]}>
       <div>Sang Won Cho</div>
-      <button onClick={toggleTheme}>{String(theme)}</button>
-      <button onClick={toggleThree}>{String(three)}</button>
       <NavBar />
+      <div className={classes.buttons}>
+        <button onClick={toggleTheme}>{String(theme)}</button>
+        <button onClick={toggleThree}>{String(three)}</button>
+      </div>
     </div>
   );
 }
