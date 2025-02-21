@@ -9,7 +9,7 @@ import classes from "./MainPage.module.css";
 export default function MainPage() {
   const { theme } = use(ThemeContext);
   return (
-    <div className={classes[theme]}>
+    <div id="main" className={classes[theme]}>
       <Landing />
       <Intro />
       <Technology />

@@ -50,7 +50,7 @@
   --font-weight-normal: 450;
 
   --backdrop-dark: rgba(0, 0, 0, 0.5);
-  --backdrop-light: rgba(255, 255, 255, 0.5);
+  --backdrop-light: rgba(255, 255, 255, 0.6);
   --bgc-dark: black;
   --bgc-light: white;
   --font-light: black;
@@ -63,35 +63,4 @@
 
 #root {
   position: relative;
-}
-
-.landing-main-containers {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
-  scroll-snap-align: center;
-  z-index: -1;
-
-  font-size: var(--font-size-med);
-
-  * {
-    z-index: 1;
-  }
-
-  h1 {
-    font-weight: var(--font-weight-heading);
-    font-size: var(--font-size-large);
-  }
-
-  a {
-    font-style: italic;
-  }
-
-  p {
-    font-weight: var(--font-weight-normal);
-    background-blend-mode: overlay;
-  }
 }

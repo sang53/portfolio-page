@@ -2,7 +2,7 @@ import classes from "./Intro.module.css";
 
 export default function Intro() {
   return (
-    <div id="intro" className={classes.introContainer}>
+    <section id="intro" className={classes.introContainer}>
       <h1>About Me:</h1>
       <p>After 5 years of Medschool, I decided to follow my passion instead</p>
       <p>
@@ -14,6 +14,6 @@ export default function Intro() {
         promise you that I will be passionate and try my absolute best
       </p>
       <a href="#technologies">Technologies:</a>
-    </div>
+    </section>
   );
 }
