@@ -15,7 +15,7 @@ export default function NavBar() {
           setActiveId(visibleSection.target.id);
         }
       },
-      { threshold: 0.5 }
+      { rootMargin: "-15%", threshold: 0.1 }
     );
 
     sections.forEach((section) => {
