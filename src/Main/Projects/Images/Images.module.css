@@ -3,6 +3,8 @@ a.container:has(img) {
   grid-row: span 4;
   border: none;
   padding: 0;
+  max-height: max-content;
+  align-self: center;
 
   @media (max-width: 1050px) {
     min-height: 375px;
@@ -26,5 +28,6 @@ a.container:has(img) {
 
 .front {
   composes: image;
+  position: static;
   opacity: 1;
 }
