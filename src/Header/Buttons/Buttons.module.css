@@ -10,7 +10,6 @@
   svg {
     height: 2rem;
     width: 2rem;
-    will-change: contents;
     cursor: pointer;
   }
 }
