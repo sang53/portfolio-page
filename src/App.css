@@ -60,6 +60,20 @@
   &::-webkit-scrollbar {
     display: none;
   }
+
+  @media (max-width: 1050px) {
+    --font-size-large: 33px;
+    --font-size-medplus: 30px;
+    --font-size-med: 23px;
+    --font-size-small: 16px;
+  }
+
+  @media (max-width: 500px) {
+    --font-size-large: 30px;
+    --font-size-medplus: 27px;
+    --font-size-med: 21px;
+    --font-size-small: 15px;
+  }
 }
 
 #root {
